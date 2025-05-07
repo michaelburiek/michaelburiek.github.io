@@ -1,0 +1,87 @@
+title: Michael Buriek
+description: >- # this means to ignore newlines until "baseurl:"
+  Machine Learning Engineer - Portfolio of posts, projects and publications.
+github_username: michaelburiek
+minimal_mistakes_skin: default
+search: true
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+
+# Outputting
+permalink: /:title/
+include:
+  - _pages
+  - favicon.ico
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-include-cache
+
+author:
+  name   : "Michael Buriek"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "Machine Learning Engineer"
+  links:
+    - label: "San Diego"
+      icon: "fas fa-fw fa-location-dot"
+      url: ""
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "michaelburiek0@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/michaelburiek"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/michaelburiek/"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/michaelburiek"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/michaelburiek/"
+
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _projects
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+  # _publications
+  - scope:
+      path: "_publications"
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+
+# Collections for posts, projects and publications
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+  publications:
+    output: true
+    permalink: /publications/:title/
